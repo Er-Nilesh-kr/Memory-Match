@@ -24,49 +24,49 @@ List<TileModel> getPairs() {
   TileModel tileModel = TileModel();
 
 // 1
-  tileModel.setImageAssetPath("images/fox.png");
+  tileModel.setImageAssetPath("images/balloon.png");
   tileModel.setIsSelected(false);
   pairs.add(tileModel);
   pairs.add(tileModel);
   tileModel = new TileModel();
   // 2
-  tileModel.setImageAssetPath("images/hippo.png");
+  tileModel.setImageAssetPath("images/calendar.png");
   tileModel.setIsSelected(false);
   pairs.add(tileModel);
   pairs.add(tileModel);
   tileModel = new TileModel();
   // 3
-  tileModel.setImageAssetPath("images/horse.png");
+  tileModel.setImageAssetPath("images/camera.png");
   tileModel.setIsSelected(false);
   pairs.add(tileModel);
   pairs.add(tileModel);
   tileModel = new TileModel();
   // 4
-  tileModel.setImageAssetPath("images/monkey.png");
+  tileModel.setImageAssetPath("images/car.png");
   tileModel.setIsSelected(false);
   pairs.add(tileModel);
   pairs.add(tileModel);
   tileModel = new TileModel();
   // 5
-  tileModel.setImageAssetPath("images/panda.png");
+  tileModel.setImageAssetPath("images/clock.png");
   tileModel.setIsSelected(false);
   pairs.add(tileModel);
   pairs.add(tileModel);
   tileModel = new TileModel();
 // 6
-  tileModel.setImageAssetPath("images/parrot.png");
+  tileModel.setImageAssetPath("images/gift.png");
   tileModel.setIsSelected(false);
   pairs.add(tileModel);
   pairs.add(tileModel);
   tileModel = new TileModel();
   // 7
-  tileModel.setImageAssetPath("images/rabbit.png");
+  tileModel.setImageAssetPath("images/house.png");
   tileModel.setIsSelected(false);
   pairs.add(tileModel);
   pairs.add(tileModel);
   tileModel = new TileModel();
 // 8
-  tileModel.setImageAssetPath("images/zoo.png");
+  tileModel.setImageAssetPath("images/sunglasses.png");
   tileModel.setIsSelected(false);
   pairs.add(tileModel);
   pairs.add(tileModel);
