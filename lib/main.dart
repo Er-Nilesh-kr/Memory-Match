@@ -102,7 +102,22 @@ class _HomePageState extends State<HomePage> {
                   )
                 : Container(
                     child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
                       children: <Widget>[
+                        SizedBox(
+                          height: 36.0,
+                        ),
+                        Text(
+                          "Want To Play Again?",
+                          style: TextStyle(
+                              fontSize: 26,
+                              fontWeight: FontWeight.w800,
+                              letterSpacing: 2.0),
+                        ),
+                        SizedBox(
+                          height: 46.0,
+                        ),
                         GestureDetector(
                           onTap: () {
                             setState(() {
@@ -133,32 +148,34 @@ class _HomePageState extends State<HomePage> {
             SizedBox(
               height: 25.0,
             ),
-            GestureDetector(
-              onTap: () {
-                setState(() {
-                  points = 0;
-                  reStart();
-                });
-              },
-              child: Container(
-                height: 50,
-                width: 150,
-                alignment: Alignment.center,
-                decoration: BoxDecoration(
-                  color: Colors.blue,
-                  borderRadius: BorderRadius.circular(24),
-                ),
-                child: Text(
-                  "Reset",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 20,
-                    fontWeight: FontWeight.w600,
-                    letterSpacing: 1.0,
-                  ),
-                ),
-              ),
-            ),
+            points != 800
+                ? GestureDetector(
+                    onTap: () {
+                      setState(() {
+                        points = 0;
+                        reStart();
+                      });
+                    },
+                    child: Container(
+                      height: 50,
+                      width: 150,
+                      alignment: Alignment.center,
+                      decoration: BoxDecoration(
+                        color: Colors.blue,
+                        borderRadius: BorderRadius.circular(24),
+                      ),
+                      child: Text(
+                        "Reset",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                          fontWeight: FontWeight.w600,
+                          letterSpacing: 1.0,
+                        ),
+                      ),
+                    ),
+                  )
+                : Container(),
           ],
         ),
       ),
@@ -243,8 +260,10 @@ class _TileState extends State<Tile> {
                 ? pairs[widget.tileIndex].getImageAssetPath()
                 : widget.imageAssestPath)
             : Container(
-                color: Colors.white,
-                child: Image.asset("images/correct.png"),
+                child: Image.asset(
+                  "images/correct.png",
+                  fit: BoxFit.cover,
+                ),
               ),
       ),
     );
