@@ -109,14 +109,23 @@ class _HomePageState extends State<HomePage> {
                           height: 36.0,
                         ),
                         Text(
+                          "CONGRATULATIONS\nYOU WON!\n\n",
+                          style: TextStyle(
+                            fontSize: 29,
+                            fontWeight: FontWeight.w900,
+                            letterSpacing: 1.0,
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
+                        Text(
                           "Want To Play Again?",
                           style: TextStyle(
-                              fontSize: 26,
-                              fontWeight: FontWeight.w800,
-                              letterSpacing: 2.0),
+                              fontSize: 24,
+                              fontWeight: FontWeight.w700,
+                              letterSpacing: 1.0),
                         ),
                         SizedBox(
-                          height: 46.0,
+                          height: 26.0,
                         ),
                         GestureDetector(
                           onTap: () {
