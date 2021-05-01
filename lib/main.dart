@@ -136,14 +136,14 @@ class _HomePageState extends State<HomePage> {
                           },
                           child: Container(
                             height: 50,
-                            width: 200,
+                            width: 150,
                             alignment: Alignment.center,
                             decoration: BoxDecoration(
                               color: Colors.blue,
                               borderRadius: BorderRadius.circular(24),
                             ),
                             child: Text(
-                              "Replay",
+                              "Play Again",
                               style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 17,
